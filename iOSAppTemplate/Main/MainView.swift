@@ -13,14 +13,17 @@ struct MainView: View {
             ContentView()
                 .tabItem {
                     Label("Home", systemImage: "house")
+                        .accentColor(.white)
                 }
             ChatView()
                 .tabItem{
                     Label("Chat", systemImage: "message")
+                        .accentColor(.white)
                 }
             ProfileView()
                 .tabItem{
                     Label("Profile", systemImage:  "person.fill")
+                        .accentColor(.white) 
                 }
         }.accentColor(.purple)
     }

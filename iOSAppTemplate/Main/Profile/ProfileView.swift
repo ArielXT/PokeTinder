@@ -18,12 +18,10 @@ struct ProfileView: View {
     var body: some View {
         
         NavigationView {
-            
             ZStack{
                 Image("lab2")
                     .resizable()
                     .ignoresSafeArea()
-                
                 VStack(alignment: .leading, spacing: 15) {
                     Text("Perfil")
                         .font(.system(size: 35, weight: .bold))
@@ -65,10 +63,7 @@ struct ProfileView: View {
                         .background(.gray)
                         .cornerRadius(8)
                     }
-                    
-                    
-                    Spacer()
-                    
+                    Spacer()                    
                     VStack {
                         Divider()
                         Button {
@@ -81,10 +76,7 @@ struct ProfileView: View {
                                 .foregroundColor(.pink)
                         }
                     }.padding(.bottom)
-                    
-                    
                 }.padding()
-                //.navigationBarTitle("Perfil")
             }
         }
         .onAppear {

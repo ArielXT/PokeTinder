@@ -11,7 +11,7 @@
 		86619757284D87C3006E7326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86619756284D87C3006E7326 /* Assets.xcassets */; };
 		8661975A284D87C3006E7326 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86619759284D87C3006E7326 /* Preview Assets.xcassets */; };
 		86619766284D88DE006E7326 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619765284D88DE006E7326 /* AppState.swift */; };
-		86619768284D8929006E7326 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619767284D8929006E7326 /* Model.swift */; };
+		86619768284D8929006E7326 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619767284D8929006E7326 /* Pokemon.swift */; };
 		8661976A284D8ACF006E7326 /* MyApp_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619769284D8ACF006E7326 /* MyApp_iOSApp.swift */; };
 		86619770284D8EA8006E7326 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8661976F284D8EA8006E7326 /* HomeViewModel.swift */; };
 		86619772284D8F10006E7326 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619771284D8F10006E7326 /* LaunchView.swift */; };
@@ -40,7 +40,7 @@
 		86619756284D87C3006E7326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86619759284D87C3006E7326 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86619765284D88DE006E7326 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		86619767284D8929006E7326 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		86619767284D8929006E7326 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		86619769284D8ACF006E7326 /* MyApp_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp_iOSApp.swift; sourceTree = "<group>"; };
 		8661976F284D8EA8006E7326 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		86619771284D8F10006E7326 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		86619760284D8833006E7326 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86619767284D8929006E7326 /* Model.swift */,
+				86619767284D8929006E7326 /* Pokemon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 				BB04FC2128618D8B00514BD1 /* ChatView.swift in Sources */,
 				86619755284D87C1006E7326 /* ContentView.swift in Sources */,
 				BB04FC1728545E3900514BD1 /* HomeButtonView.swift in Sources */,
-				86619768284D8929006E7326 /* Model.swift in Sources */,
+				86619768284D8929006E7326 /* Pokemon.swift in Sources */,
 				8661976A284D8ACF006E7326 /* MyApp_iOSApp.swift in Sources */,
 				BB04FC152854409A00514BD1 /* CardView.swift in Sources */,
 				BB04FC27286252D700514BD1 /* SignUpView.swift in Sources */,

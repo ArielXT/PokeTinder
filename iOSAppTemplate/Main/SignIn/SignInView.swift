@@ -14,6 +14,7 @@ struct SignInView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
+    @State var alertError = false
     
     var body: some View {
         NavigationView{
@@ -58,7 +59,15 @@ struct SignInView: View {
                         }
                     }
                     }.padding()
-                }
+            }.alert(isPresented: $alertError) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(authViewModel.errorMessage),
+                    dismissButton: .default(Text("Ok"))
+                )
+            }.onReceive(authViewModel.$showError) { newValue in
+                alertError = newValue
+            }
             }
         }.accentColor(.green)
     }

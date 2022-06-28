@@ -14,6 +14,7 @@ struct SignUpView: View {
     @State private var name: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
+    @State var alertError = false
     
     var body: some View {
         ZStack{
@@ -59,6 +60,16 @@ struct SignUpView: View {
                     .cornerRadius(8)
                 }
                 }.padding()
+                .alert(isPresented: $alertError) {
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(authViewModel.errorMessage),
+                        dismissButton: .default(Text("Ok"))
+                    )
+                }
+                .onReceive(authViewModel.$showError) { newValue in
+                    alertError = newValue
+                }            
         }
     }
     
