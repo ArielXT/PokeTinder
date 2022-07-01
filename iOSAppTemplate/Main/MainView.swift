@@ -25,7 +25,7 @@ struct MainView: View {
                     Label("Profile", systemImage:  "person.fill")
                         .accentColor(.white) 
                 }
-        }.accentColor(.purple)
+        }.accentColor(.white)
     }
 }
 
