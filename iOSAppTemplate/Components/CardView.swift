@@ -41,7 +41,7 @@ struct CardView: View {
         }
         .cornerRadius(15)
         .padding()
-        .offset(x: offset.width * 1, y: offset.height * 0.4)
+        .offset(x: offset.width * 1.5, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
         .gesture(
             DragGesture()
