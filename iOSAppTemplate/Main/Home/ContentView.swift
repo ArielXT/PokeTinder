@@ -34,12 +34,12 @@ struct ContentView: View {
                 }
                 .padding()
             }
+            .task {
+                homeViewModel.getPokemonByUserId()
+            }
             .navigationBarHidden(true)
         }
-        }
-        .task {
-            homeViewModel.getPokemonByUserId()
-        }
+      }        
     }
 }
 
